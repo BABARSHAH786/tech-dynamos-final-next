@@ -15,7 +15,7 @@ export default function SignupPage() {
   const [password, setPassword] = useState("")
   const navigateTo = useRouter()
 
-  const handleRegister = async (e) => {
+  const handleRegister = async (e: { preventDefault: () => void }) => {
     e.preventDefault()
     try {
       const { data } = await axios.post(
@@ -31,14 +31,18 @@ export default function SignupPage() {
 
       toast.success(data.message || "User registered successfully")
       localStorage.setItem("jwt", data.token)
-      navigateTo("/login")
+      navigateTo.push("/login")
 
       setUserName("")
       setEmail("")
       setPassword("")
     } catch (error) {
       console.error(error)
-      toast.error(error.response?.data?.errors || "User registration failed")
+      if (axios.isAxiosError(error)) {
+        toast.error(error.response?.data?.errors || "User registration failed")
+      } else {
+        toast.error("User registration failed")
+      }
     }
   }
 

@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from "react"
 import axios from "axios"
-import Link from "next/Link"
+import Link from "next/link"
 // import { useNavigate, Link } from "react-router-dom"
 import toast from "react-hot-toast"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"

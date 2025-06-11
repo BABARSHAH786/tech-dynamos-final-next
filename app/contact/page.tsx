@@ -61,7 +61,7 @@ export default function ContactPage() {
       <section className="py-10 bg-blue-900 text-white text-center">
         <h2 className="text-3xl font-bold mb-4">Let’s build your digital future | آئیں آپ کا ڈیجیٹل مستقبل بنائیں</h2>
         <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black">
-          <a href="mailto:syedbabarali640@gmail.com">Get In Touch | رابطہ کریں</a>
+          <a href="mailto:syedbabarali640@gmail.com">Contact on Email | رابطہ کریں</a>
         </Button>
       </section>
     </div>

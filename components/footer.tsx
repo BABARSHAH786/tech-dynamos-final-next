@@ -99,6 +99,7 @@ export function Footer() {
                 <span className="text-gray-300">syedbabarali640@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
+              
                 <Phone className="w-5 h-5 text-blue-400" />
                 <span className="text-gray-300">+92 3052374486</span>
               </div>

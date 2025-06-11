@@ -129,7 +129,7 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <Button variant="outline" className="w-full">
-                  <Link href="/ecommerce">Learn More</Link>
+                  <Link href="https://react-e-commerce-store-black.vercel.app/">View Project</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -285,7 +285,7 @@ export default function HomePage() {
                 <h3 className="font-bold text-lg mb-2">E-commerce Platform</h3>
                 <p className="text-gray-600 mb-4">Multi-vendor marketplace with advanced analytics dashboard</p>
                 <Button variant="outline" size="sm">
-                  <Link href="/portfolio">View Details</Link>
+                  <Link href="https://react-e-commerce-store-black.vercel.app">View Details</Link>
                 </Button>
               </CardContent>
             </Card>

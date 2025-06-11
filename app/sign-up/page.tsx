@@ -19,7 +19,8 @@ export default function SignupPage() {
     e.preventDefault()
     try {
       const { data } = await axios.post(
-        "https://backend-only-6264.onrender.com/user/signup",
+        // "https://backend-only-6264.onrender.com/user/signup",
+        "https://techdynamos-backend-only.onrender.com/user/signup",
         { username, email, password },
         {
           withCredentials: true,

@@ -18,7 +18,8 @@ export default function LoginPage() {
     try {
       const { data } = await axios.post(
         // "https://backend-only-6264.onrender.com/user/signup",
-        "https://backend-only-6264.onrender.com/user/login",
+        // "https://backend-only-6264.onrender.com/user/login",
+        "https://techdynamos-backend-only.onrender.com/user/login",
         { email, password },
         {
           withCredentials: true,

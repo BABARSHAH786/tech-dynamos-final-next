@@ -17,7 +17,7 @@ import {
 import Link from "next/link"
 
 export default function HomePage() {
-    // const token = localStorage.getItem("jwt");
+  // const token = localStorage.getItem("jwt");
 
   return (
     <div className="min-h-screen">
@@ -30,8 +30,7 @@ export default function HomePage() {
               Tech Dynamos: Your Partner for <span className="text-yellow-400">Digital Transformation</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-blue-100">
-              Innovate Your Digital Presence with Custom E-commerce Solutions and Comprehensive Management Systems
-            </p>
+              We Create Every Kind of Website You Need — Designed, Developed, Delivered            </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold">
                 <Link href="/services" className="flex items-center">
@@ -81,8 +80,33 @@ export default function HomePage() {
                     <div className="w-2 h-2 bg-red-500 rounded-full mt-3 mr-3 flex-shrink-0"></div>
                     <span>Lack of digital presence in competitive markets</span>
                   </li>
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-red-500 rounded-full mt-3 mr-3 flex-shrink-0"></div>
+                    <span>Low-performing e-commerce stores with poor UX</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-red-500 rounded-full mt-3 mr-3 flex-shrink-0"></div>
+                    <span>Inaccessible or outdated educational platforms</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-red-500 rounded-full mt-3 mr-3 flex-shrink-0"></div>
+                    <span>Inefficient booking systems causing missed opportunities</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-red-500 rounded-full mt-3 mr-3 flex-shrink-0"></div>
+                    <span>Generic websites that fail to reflect your brand identity</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-red-500 rounded-full mt-3 mr-3 flex-shrink-0"></div>
+                    <span>Security concerns with outdated web technologies</span>
+                  </li>
+                  <li className="flex items-start">
+                    <div className="w-2 h-2 bg-red-500 rounded-full mt-3 mr-3 flex-shrink-0"></div>
+                    <span>Limited scalability as your business grows</span>
+                  </li>
                 </ul>
               </div>
+
               <div>
                 <h3 className="text-2xl font-bold mb-6 text-green-600">Our Solutions</h3>
                 <ul className="space-y-4">
@@ -102,8 +126,33 @@ export default function HomePage() {
                     <CheckCircle className="w-6 h-6 text-green-500 mt-1 mr-3 flex-shrink-0" />
                     <span>Custom digital strategies that outpace competition</span>
                   </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="w-6 h-6 text-green-500 mt-1 mr-3 flex-shrink-0" />
+                    <span>Dynamic portfolio websites that showcase your brand</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="w-6 h-6 text-green-500 mt-1 mr-3 flex-shrink-0" />
+                    <span>Educational platforms for schools, colleges, and madrasas</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="w-6 h-6 text-green-500 mt-1 mr-3 flex-shrink-0" />
+                    <span>Booking and appointment systems for service providers</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="w-6 h-6 text-green-500 mt-1 mr-3 flex-shrink-0" />
+                    <span>Business websites for startups, SMEs, and enterprises</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="w-6 h-6 text-green-500 mt-1 mr-3 flex-shrink-0" />
+                    <span>Blog and news platforms with SEO-optimized structures</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="w-6 h-6 text-green-500 mt-1 mr-3 flex-shrink-0" />
+                    <span>Custom web applications tailored to unique business needs</span>
+                  </li>
                 </ul>
               </div>
+
             </div>
           </div>
         </div>

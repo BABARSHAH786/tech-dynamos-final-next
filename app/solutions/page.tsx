@@ -13,8 +13,7 @@ export default function EcommercePage() {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">Build Your Online Store | Tech Dynamos</h1>
             <p className="text-xl md:text-2xl mb-8 text-blue-100">
-              Transform your business with powerful e-commerce solutions that drive sales and growth
-            </p>
+We craft high-performing websites that grow your business — whether you're selling, teaching, managing, or showcasing.            </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className=" bg-yellow-500 hover:bg-yellow-600 text-black">
                 <Link href="/contact">Get Free Consultation</Link>
@@ -24,7 +23,7 @@ export default function EcommercePage() {
                 variant="outline"
                 className="border-white text-black hover:bg-white hover:text-blue-900"
               >
-                <Link href="/portfolio">View E-commerce Portfolio</Link>
+                <Link href="/portfolio">View Portfolio</Link>
               </Button>
             </div>
           </div>
@@ -33,61 +32,25 @@ export default function EcommercePage() {
 
       {/* Problem/Solution */}
       <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Your Business Needs E-commerce</h2>
-              <p className="text-xl text-gray-600">
-                Don't let your competitors capture the online market while you're stuck offline
-              </p>
-            </div>
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div>
-                <h3 className="text-2xl font-bold mb-6 text-red-600">Without E-commerce</h3>
-                <ul className="space-y-4">
-                  <li className="flex items-start">
-                    <div className="w-2 h-2 bg-red-500 rounded-full mt-3 mr-3 flex-shrink-0"></div>
-                    <span>Limited to local customers and business hours</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-2 h-2 bg-red-500 rounded-full mt-3 mr-3 flex-shrink-0"></div>
-                    <span>Missing out on the $5.7 trillion global e-commerce market</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-2 h-2 bg-red-500 rounded-full mt-3 mr-3 flex-shrink-0"></div>
-                    <span>Manual order processing and inventory management</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-2 h-2 bg-red-500 rounded-full mt-3 mr-3 flex-shrink-0"></div>
-                    <span>Difficulty tracking customer behavior and preferences</span>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold mb-6 text-green-600">With Our E-commerce Solution</h3>
-                <ul className="space-y-4">
-                  <li className="flex items-start">
-                    <CheckCircle className="w-6 h-6 text-green-500 mt-1 mr-3 flex-shrink-0" />
-                    <span>24/7 sales with global reach and unlimited customers</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="w-6 h-6 text-green-500 mt-1 mr-3 flex-shrink-0" />
-                    <span>Tap into online shopping trends and increase revenue</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="w-6 h-6 text-green-500 mt-1 mr-3 flex-shrink-0" />
-                    <span>Automated order processing and inventory tracking</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="w-6 h-6 text-green-500 mt-1 mr-3 flex-shrink-0" />
-                    <span>Detailed analytics and customer insights for growth</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+  <div className="container mx-auto px-4">
+    <div className="max-w-6xl mx-auto">
+      <div className="text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Your Business Needs a Website</h2>
+        <p className="text-xl text-gray-600">
+          Don’t let your competitors dominate online while your business stays invisible
+        </p>
+      </div>
+      <div className="grid md:grid-cols-2 gap-12 items-center">
+        {/* WITHOUT A WEBSITE */}
+       
+
+        {/* WITH A PROFESSIONAL WEBSITE */}
+       
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Key Features */}
       <section className="py-16">

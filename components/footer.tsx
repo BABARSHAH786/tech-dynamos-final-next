@@ -13,7 +13,7 @@ import {
 export function Footer() {
   return (
     <footer className="bg-primary text-white">
-      <div className="container mx-auto px-4 py-8"> {/* reduced py-8 */}
+      <div className="container mx-auto px-2 py-4"> {/* reduced py-8 */}
         <div className="grid md:grid-cols-4 gap-6"> {/* reduced gap */}
           {/* Company Info */}
           <div>
@@ -104,7 +104,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/20 mt-6 pt-4 text-center text-xs text-white/60">
+        <div className="border-t border-white/20 mt-4 pt-4 text-center text-xs text-white/60">
           © {new Date().getFullYear()} Tech Dynamos. All rights reserved. |
           <Link href="/privacy" className="hover:text-white ml-1">
             Privacy Policy

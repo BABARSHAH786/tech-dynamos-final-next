@@ -763,28 +763,7 @@ Transform your online presence with measurable results        </p>
       </div>
 
       {/* Process Steps */}
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
-        {[
-          { num: "1", title: "Consultation", desc: "Understanding your business needs and goals." },
-          { num: "2", title: "Design", desc: "Creating a visually appealing layout." },
-          { num: "3", title: "Development", desc: "Building functionality and features." },
-          { num: "4", title: "Testing", desc: "Ensuring everything works flawlessly." },
-          { num: "5", title: "Launch", desc: "Taking your website live." },
-          { num: "6", title: "Support", desc: "Ongoing updates and assistance." }
-        ].map(({ num, title, desc }, i) => (
-          <div key={num} className="flex items-start">
-            <div className={`w-8 h-8 rounded-full text-white flex items-center justify-center font-bold mr-4
-              ${i === 0 ? "bg-primary" : i === 1 ? "bg-success" : i === 2 ? "bg-accent" : i === 3 ? "bg-secondary" : i === 4 ? "bg-destructive" : "bg-[hsl(var(--chart-1))]"}
-            `}>
-              {num}
-            </div>
-            <div>
-              <h4 className="font-semibold text-base">{title}</h4>
-              <p className="text-sm text-muted-foreground">{desc}</p>
-            </div>
-          </div>
-        ))}
-      </div>
+    
     </div>
   </div>
 </section>

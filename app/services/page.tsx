@@ -1,3 +1,268 @@
+// import { Button } from "@/components/ui/button"
+// import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+// import {
+//   ArrowRight,
+//   ShoppingCart,
+//   GraduationCap,
+//   Users,
+//   Globe,
+//   Zap,
+//   CheckCircle,
+//   Clock,
+//   Shield,
+//   Headphones,
+//   Calendar,
+// } from "lucide-react"
+// import Link from "next/link"
+
+// export default function ServicesPage() {
+//   return (
+//     <div className="min-h-screen">
+//       {/* Hero Section */}
+//       <section className="bg-gradient-to-br from-blue-50 to-purple-50 py-16">
+//         <div className="container mx-auto px-4">
+//           <div className="max-w-4xl mx-auto text-center">
+//             <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Solutions | Tech Dynamos</h1>
+//             <p className="text-xl text-gray-600 mb-8">
+//               Comprehensive digital solutions designed to transform your business operations and drive growth
+//             </p>
+//           </div>
+//         </div>
+//       </section>
+
+//       {/* Main Services Grid */}
+//       <section className="py-16">
+//         <div className="container mx-auto px-4">
+//           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+//             {/* E-commerce */}
+//             <Card className="hover:shadow-xl transition-shadow border-t-4 border-t-blue-600">
+//               <CardHeader>
+//                 <ShoppingCart className="w-12 h-12 text-blue-600 mb-4" />
+//                 <CardTitle className="text-2xl">E-commerce Websites</CardTitle>
+//                 <CardDescription className="text-base">
+//                   Complete online stores with advanced features for maximum sales conversion
+//                 </CardDescription>
+//               </CardHeader>
+//               <CardContent>
+//                 <ul className="space-y-2 mb-6">
+//                   <li className="flex items-center text-sm">
+//                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+//                     Product catalog management
+//                   </li>
+//                   <li className="flex items-center text-sm">
+//                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+//                     Secure payment integration
+//                   </li>
+//                   <li className="flex items-center text-sm">
+//                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+//                     Inventory management
+//                   </li>
+//                   <li className="flex items-center text-sm">
+//                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+//                     Mobile-responsive design
+//                   </li>
+//                 </ul>
+//                 <Button className="w-full">
+//                   <Link href="/ecommerce" className="flex items-center">
+//                     Learn More <ArrowRight className="ml-2 h-4 w-4" />
+//                   </Link>
+//                 </Button>
+//               </CardContent>
+//             </Card>
+
+//             {/* School Management */}
+//             <Card className="hover:shadow-xl transition-shadow border-t-4 border-t-green-600">
+//               <CardHeader>
+//                 <GraduationCap className="w-12 h-12 text-green-600 mb-4" />
+//                 <CardTitle className="text-2xl">School Management</CardTitle>
+//                 <CardDescription className="text-base">
+//                   Streamline school operations with comprehensive management systems
+//                 </CardDescription>
+//               </CardHeader>
+//               <CardContent>
+//                 <ul className="space-y-2 mb-6">
+//                   <li className="flex items-center text-sm">
+//                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+//                     Student enrollment & records
+//                   </li>
+//                   <li className="flex items-center text-sm">
+//                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+//                     Attendance tracking
+//                   </li>
+//                   <li className="flex items-center text-sm">
+//                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+//                     Grade management
+//                   </li>
+//                   <li className="flex items-center text-sm">
+//                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+//                     Parent communication portal
+//                   </li>
+//                 </ul>
+//                 <Button className="w-full">
+//                   <Link href="/education" className="flex items-center">
+//                     Learn More <ArrowRight className="ml-2 h-4 w-4" />
+//                   </Link>
+//                 </Button>
+//               </CardContent>
+//             </Card>
+
+//             {/* College Management */}
+//             <Card className="hover:shadow-xl transition-shadow border-t-4 border-t-purple-600">
+//               <CardHeader>
+//                 <Users className="w-12 h-12 text-purple-600 mb-4" />
+//                 <CardTitle className="text-2xl">College Management</CardTitle>
+//                 <CardDescription className="text-base">
+//                   Advanced systems for higher education institutions
+//                 </CardDescription>
+//               </CardHeader>
+//               <CardContent>
+//                 <ul className="space-y-2 mb-6">
+//                   <li className="flex items-center text-sm">
+//                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+//                     Course & curriculum management
+//                   </li>
+//                   <li className="flex items-center text-sm">
+//                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+//                     Faculty management
+//                   </li>
+//                   <li className="flex items-center text-sm">
+//                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+//                     Examination system
+//                   </li>
+//                   <li className="flex items-center text-sm">
+//                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+//                     Library management
+//                   </li>
+//                 </ul>
+//                 <Button className="w-full">
+//                   <Link href="/education" className="flex items-center">
+//                     Learn More <ArrowRight className="ml-2 h-4 w-4" />
+//                   </Link>
+//                 </Button>
+//               </CardContent>
+//             </Card>
+
+//             {/* University Management */}
+//             <Card className="hover:shadow-xl transition-shadow border-t-4 border-t-orange-600">
+//               <CardHeader>
+//                 <Globe className="w-12 h-12 text-orange-600 mb-4" />
+//                 <CardTitle className="text-2xl">University Systems</CardTitle>
+//                 <CardDescription className="text-base">
+//                   Enterprise-level platforms for large educational institutions
+//                 </CardDescription>
+//               </CardHeader>
+//               <CardContent>
+//                 <ul className="space-y-2 mb-6">
+//                   <li className="flex items-center text-sm">
+//                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+//                     Multi-campus management
+//                   </li>
+//                   <li className="flex items-center text-sm">
+//                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+//                     Research project tracking
+//                   </li>
+//                   <li className="flex items-center text-sm">
+//                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+//                     Hostel management
+//                   </li>
+//                   <li className="flex items-center text-sm">
+//                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+//                     Alumni network
+//                   </li>
+//                 </ul>
+//                 <Button className="w-full">
+//                   <Link href="/education" className="flex items-center">
+//                     Learn More <ArrowRight className="ml-2 h-4 w-4" />
+//                   </Link>
+//                 </Button>
+//               </CardContent>
+//             </Card>
+
+//             {/* Madrasa Management */}
+//             <Card className="hover:shadow-xl transition-shadow border-t-4 border-t-teal-600">
+//               <CardHeader>
+//                 <Globe className="w-12 h-12 text-teal-600 mb-4" />
+//                 <CardTitle className="text-2xl">Madrasa Management</CardTitle>
+//                 <CardDescription className="text-base">
+//                   Specialized systems for Islamic educational institutions
+//                 </CardDescription>
+//               </CardHeader>
+//               <CardContent>
+//                 <ul className="space-y-2 mb-6">
+//                   <li className="flex items-center text-sm">
+//                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+//                     Islamic curriculum tracking
+//                   </li>
+//                   <li className="flex items-center text-sm">
+//                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+//                     Prayer time integration
+//                   </li>
+//                   <li className="flex items-center text-sm">
+//                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+//                     Hafiz progress tracking
+//                   </li>
+//                   <li className="flex items-center text-sm">
+//                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+//                     Donation management
+//                   </li>
+//                 </ul>
+//                 <Button className="w-full">
+//                   <Link href="/education" className="flex items-center">
+//                     Learn More <ArrowRight className="ml-2 h-4 w-4" />
+//                   </Link>
+//                 </Button>
+//               </CardContent>
+//             </Card>
+
+//             {/* Custom Solutions */}
+//             <Card className="hover:shadow-xl transition-shadow border-t-4 border-t-red-600">
+//               <CardHeader>
+//                 <Zap className="w-12 h-12 text-red-600 mb-4" />
+//                 <CardTitle className="text-2xl">Custom Solutions</CardTitle>
+//                 <CardDescription className="text-base">
+//                   Tailored digital solutions for unique business requirements
+//                 </CardDescription>
+//               </CardHeader>
+//               <CardContent>
+//                 <ul className="space-y-2 mb-6">
+//                   <li className="flex items-center text-sm">
+//                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+//                     Requirement analysis
+//                   </li>
+//                   <li className="flex items-center text-sm">
+//                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+//                     Custom development
+//                   </li>
+//                   <li className="flex items-center text-sm">
+//                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+//                     System integration
+//                   </li>
+//                   <li className="flex items-center text-sm">
+//                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+//                     Ongoing support
+//                   </li>
+//                 </ul>
+//                 <Button className="w-full">
+//                   <Link href="/contact" className="flex items-center">
+//                     Discuss Your Needs <ArrowRight className="ml-2 h-4 w-4" />
+//                   </Link>
+//                 </Button>
+//               </CardContent>
+//             </Card>
+//           </div>
+//         </div>
+
+
+//         {/*  */}
+       
+//       </section>
+//     </div>
+//   )
+// }
+
+
+
+
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import {
@@ -8,9 +273,13 @@ import {
   Globe,
   Zap,
   CheckCircle,
-  Clock,
-  Shield,
+  Calendar,
+  BarChart3,
+  Smartphone,
+  CreditCard,
   Headphones,
+  Shield,
+  Clock
 } from "lucide-react"
 import Link from "next/link"
 
@@ -18,11 +287,11 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 to-purple-50 py-16">
+      <section className="bg-gradient-to-br from-primary/10 to-secondary/10 py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Solutions | Tech Dynamos</h1>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="text-xl text-muted-foreground mb-8">
               Comprehensive digital solutions designed to transform your business operations and drive growth
             </p>
           </div>
@@ -34,9 +303,9 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* E-commerce */}
-            <Card className="hover:shadow-xl transition-shadow border-t-4 border-t-blue-600">
+            <Card className="hover:shadow-xl transition-shadow border-t-4 border-t-primary">
               <CardHeader>
-                <ShoppingCart className="w-12 h-12 text-blue-600 mb-4" />
+                <ShoppingCart className="w-12 h-12 text-primary mb-4" />
                 <CardTitle className="text-2xl">E-commerce Websites</CardTitle>
                 <CardDescription className="text-base">
                   Complete online stores with advanced features for maximum sales conversion
@@ -45,19 +314,19 @@ export default function ServicesPage() {
               <CardContent>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center text-sm">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    <CheckCircle className="w-4 h-4 text-success mr-2" />
                     Product catalog management
                   </li>
                   <li className="flex items-center text-sm">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    <CheckCircle className="w-4 h-4 text-success mr-2" />
                     Secure payment integration
                   </li>
                   <li className="flex items-center text-sm">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    <CheckCircle className="w-4 h-4 text-success mr-2" />
                     Inventory management
                   </li>
                   <li className="flex items-center text-sm">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    <CheckCircle className="w-4 h-4 text-success mr-2" />
                     Mobile-responsive design
                   </li>
                 </ul>
@@ -70,9 +339,9 @@ export default function ServicesPage() {
             </Card>
 
             {/* School Management */}
-            <Card className="hover:shadow-xl transition-shadow border-t-4 border-t-green-600">
+            <Card className="hover:shadow-xl transition-shadow border-t-4 border-t-success">
               <CardHeader>
-                <GraduationCap className="w-12 h-12 text-green-600 mb-4" />
+                <GraduationCap className="w-12 h-12 text-success mb-4" />
                 <CardTitle className="text-2xl">School Management</CardTitle>
                 <CardDescription className="text-base">
                   Streamline school operations with comprehensive management systems
@@ -81,19 +350,19 @@ export default function ServicesPage() {
               <CardContent>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center text-sm">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    <CheckCircle className="w-4 h-4 text-success mr-2" />
                     Student enrollment & records
                   </li>
                   <li className="flex items-center text-sm">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    <CheckCircle className="w-4 h-4 text-success mr-2" />
                     Attendance tracking
                   </li>
                   <li className="flex items-center text-sm">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    <CheckCircle className="w-4 h-4 text-success mr-2" />
                     Grade management
                   </li>
                   <li className="flex items-center text-sm">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    <CheckCircle className="w-4 h-4 text-success mr-2" />
                     Parent communication portal
                   </li>
                 </ul>
@@ -106,9 +375,9 @@ export default function ServicesPage() {
             </Card>
 
             {/* College Management */}
-            <Card className="hover:shadow-xl transition-shadow border-t-4 border-t-purple-600">
+            <Card className="hover:shadow-xl transition-shadow border-t-4 border-t-secondary">
               <CardHeader>
-                <Users className="w-12 h-12 text-purple-600 mb-4" />
+                <Users className="w-12 h-12 text-secondary mb-4" />
                 <CardTitle className="text-2xl">College Management</CardTitle>
                 <CardDescription className="text-base">
                   Advanced systems for higher education institutions
@@ -117,19 +386,19 @@ export default function ServicesPage() {
               <CardContent>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center text-sm">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    <CheckCircle className="w-4 h-4 text-success mr-2" />
                     Course & curriculum management
                   </li>
                   <li className="flex items-center text-sm">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    <CheckCircle className="w-4 h-4 text-success mr-2" />
                     Faculty management
                   </li>
                   <li className="flex items-center text-sm">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    <CheckCircle className="w-4 h-4 text-success mr-2" />
                     Examination system
                   </li>
                   <li className="flex items-center text-sm">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    <CheckCircle className="w-4 h-4 text-success mr-2" />
                     Library management
                   </li>
                 </ul>
@@ -142,9 +411,9 @@ export default function ServicesPage() {
             </Card>
 
             {/* University Management */}
-            <Card className="hover:shadow-xl transition-shadow border-t-4 border-t-orange-600">
+            <Card className="hover:shadow-xl transition-shadow border-t-4 border-t-accent">
               <CardHeader>
-                <Globe className="w-12 h-12 text-orange-600 mb-4" />
+                <Globe className="w-12 h-12 text-accent mb-4" />
                 <CardTitle className="text-2xl">University Systems</CardTitle>
                 <CardDescription className="text-base">
                   Enterprise-level platforms for large educational institutions
@@ -153,19 +422,19 @@ export default function ServicesPage() {
               <CardContent>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center text-sm">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    <CheckCircle className="w-4 h-4 text-success mr-2" />
                     Multi-campus management
                   </li>
                   <li className="flex items-center text-sm">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    <CheckCircle className="w-4 h-4 text-success mr-2" />
                     Research project tracking
                   </li>
                   <li className="flex items-center text-sm">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    <CheckCircle className="w-4 h-4 text-success mr-2" />
                     Hostel management
                   </li>
                   <li className="flex items-center text-sm">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    <CheckCircle className="w-4 h-4 text-success mr-2" />
                     Alumni network
                   </li>
                 </ul>
@@ -178,9 +447,9 @@ export default function ServicesPage() {
             </Card>
 
             {/* Madrasa Management */}
-            <Card className="hover:shadow-xl transition-shadow border-t-4 border-t-teal-600">
+            <Card className="hover:shadow-xl transition-shadow border-t-4 border-t-info">
               <CardHeader>
-                <Globe className="w-12 h-12 text-teal-600 mb-4" />
+                <Globe className="w-12 h-12 text-info mb-4" />
                 <CardTitle className="text-2xl">Madrasa Management</CardTitle>
                 <CardDescription className="text-base">
                   Specialized systems for Islamic educational institutions
@@ -189,19 +458,19 @@ export default function ServicesPage() {
               <CardContent>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center text-sm">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    <CheckCircle className="w-4 h-4 text-success mr-2" />
                     Islamic curriculum tracking
                   </li>
                   <li className="flex items-center text-sm">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    <CheckCircle className="w-4 h-4 text-success mr-2" />
                     Prayer time integration
                   </li>
                   <li className="flex items-center text-sm">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    <CheckCircle className="w-4 h-4 text-success mr-2" />
                     Hafiz progress tracking
                   </li>
                   <li className="flex items-center text-sm">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    <CheckCircle className="w-4 h-4 text-success mr-2" />
                     Donation management
                   </li>
                 </ul>
@@ -214,9 +483,9 @@ export default function ServicesPage() {
             </Card>
 
             {/* Custom Solutions */}
-            <Card className="hover:shadow-xl transition-shadow border-t-4 border-t-red-600">
+            <Card className="hover:shadow-xl transition-shadow border-t-4 border-t-destructive">
               <CardHeader>
-                <Zap className="w-12 h-12 text-red-600 mb-4" />
+                <Zap className="w-12 h-12 text-destructive mb-4" />
                 <CardTitle className="text-2xl">Custom Solutions</CardTitle>
                 <CardDescription className="text-base">
                   Tailored digital solutions for unique business requirements
@@ -225,19 +494,19 @@ export default function ServicesPage() {
               <CardContent>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center text-sm">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    <CheckCircle className="w-4 h-4 text-success mr-2" />
                     Requirement analysis
                   </li>
                   <li className="flex items-center text-sm">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    <CheckCircle className="w-4 h-4 text-success mr-2" />
                     Custom development
                   </li>
                   <li className="flex items-center text-sm">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    <CheckCircle className="w-4 h-4 text-success mr-2" />
                     System integration
                   </li>
                   <li className="flex items-center text-sm">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                    <CheckCircle className="w-4 h-4 text-success mr-2" />
                     Ongoing support
                   </li>
                 </ul>
@@ -252,55 +521,279 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* How We Work */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">How We Work</h2>
-              <p className="text-xl text-gray-600">
-                Our proven development process ensures successful project delivery
-              </p>
+      {/* add theme */}
+      <section className="py-16">
+  <div className="container mx-auto px-4">
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+      {/* Portfolio Websites */}
+      <Card className="hover:shadow-xl transition-shadow border-t-4 border-t-primary">
+        <CardHeader>
+          <Users className="w-12 h-12 text-primary mb-4" />
+          <CardTitle className="text-2xl">Portfolio Websites</CardTitle>
+          <CardDescription className="text-base">
+            Personal websites to showcase your work, skills, and projects.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <ul className="space-y-2 mb-6">
+            <li className="flex items-center text-sm">
+              <CheckCircle className="w-4 h-4 text-secondary mr-2" />
+              Project gallery with filtering
+            </li>
+            <li className="flex items-center text-sm">
+              <CheckCircle className="w-4 h-4 text-secondary mr-2" />
+              Resume & contact integration
+            </li>
+            <li className="flex items-center text-sm">
+              <CheckCircle className="w-4 h-4 text-secondary mr-2" />
+              Responsive and dark-mode ready
+            </li>
+            <li className="flex items-center text-sm">
+              <CheckCircle className="w-4 h-4 text-secondary mr-2" />
+              SEO & performance optimized
+            </li>
+          </ul>
+          <Button className="w-full bg-primary text-white hover:bg-primary/90">
+            <Link href="/portfolio" className="flex items-center">
+              Learn More <ArrowRight className="ml-2 h-4 w-4" />
+            </Link>
+          </Button>
+        </CardContent>
+      </Card>
+
+      {/* Corporate Websites */}
+      <Card className="hover:shadow-xl transition-shadow border-t-4 border-t-primary">
+        <CardHeader>
+          <Globe className="w-12 h-12 text-primary mb-4" />
+          <CardTitle className="text-2xl">Corporate Websites</CardTitle>
+          <CardDescription className="text-base">
+            Build credibility with a professional online presence for your business.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <ul className="space-y-2 mb-6">
+            <li className="flex items-center text-sm">
+              <CheckCircle className="w-4 h-4 text-secondary mr-2" />
+              About, services, and contact pages
+            </li>
+            <li className="flex items-center text-sm">
+              <CheckCircle className="w-4 h-4 text-secondary mr-2" />
+              Lead capture and inquiry forms
+            </li>
+            <li className="flex items-center text-sm">
+              <CheckCircle className="w-4 h-4 text-secondary mr-2" />
+              Secure & fast hosting integration
+            </li>
+            <li className="flex items-center text-sm">
+              <CheckCircle className="w-4 h-4 text-secondary mr-2" />
+              SEO & Google indexing setup
+            </li>
+          </ul>
+          <Button className="w-full bg-primary text-white hover:bg-primary/90">
+            <Link href="/corporate" className="flex items-center">
+              Learn More <ArrowRight className="ml-2 h-4 w-4" />
+            </Link>
+          </Button>
+        </CardContent>
+      </Card>
+
+      {/* Booking Systems */}
+      <Card className="hover:shadow-xl transition-shadow border-t-4 border-t-primary">
+        <CardHeader>
+          <Calendar className="w-12 h-12 text-primary mb-4" />
+          <CardTitle className="text-2xl">Booking Systems</CardTitle>
+          <CardDescription className="text-base">
+            Automated booking and scheduling platforms for service-based businesses.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <ul className="space-y-2 mb-6">
+            <li className="flex items-center text-sm">
+              <CheckCircle className="w-4 h-4 text-secondary mr-2" />
+              Real-time calendar integration
+            </li>
+            <li className="flex items-center text-sm">
+              <CheckCircle className="w-4 h-4 text-secondary mr-2" />
+              Online payment support
+            </li>
+            <li className="flex items-center text-sm">
+              <CheckCircle className="w-4 h-4 text-secondary mr-2" />
+              Email/SMS reminders
+            </li>
+            <li className="flex items-center text-sm">
+              <CheckCircle className="w-4 h-4 text-secondary mr-2" />
+              Staff and service management
+            </li>
+          </ul>
+          <Button className="w-full bg-primary text-white hover:bg-primary/90">
+            <Link href="/booking" className="flex items-center">
+              Learn More <ArrowRight className="ml-2 h-4 w-4" />
+            </Link>
+          </Button>
+        </CardContent>
+      </Card>
+
+    </div>
+  </div>
+</section>
+
+{/* more work */}
+<section className="py-16 bg-gray-50">
+  <div className="container mx-auto px-4">
+    <div className="max-w-6xl mx-auto">
+      <div className="text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">Why Your Business Needs a Website</h2>
+        <p className="text-muted-foreground max-w-2xl mx-auto">
+          Establish your online presence and boost customer engagement with a professionally designed website tailored to your needs.
+        </p>
+      </div>
+
+      {/* Features */}
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <Card className="hover:shadow-lg transition-shadow border-t-4 border-primary">
+          <CardHeader>
+            <ShoppingCart className="w-12 h-12 text-primary mb-4" />
+            <CardTitle>Product Catalog Management</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="space-y-2 text-sm">
+              <li className="flex items-center"><CheckCircle className="w-4 h-4 text-success mr-2" /> Unlimited products and categories</li>
+              <li className="flex items-center"><CheckCircle className="w-4 h-4 text-success mr-2" /> Custom attributes (size, color, etc.)</li>
+              <li className="flex items-center"><CheckCircle className="w-4 h-4 text-success mr-2" /> Inventory tracking</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card className="hover:shadow-lg transition-shadow border-t-4 border-secondary">
+          <CardHeader>
+            <CreditCard className="w-12 h-12 text-secondary mb-4" />
+            <CardTitle>Secure Payments</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="space-y-2 text-sm">
+              <li className="flex items-center"><CheckCircle className="w-4 h-4 text-success mr-2" /> Multiple payment gateways</li>
+              <li className="flex items-center"><CheckCircle className="w-4 h-4 text-success mr-2" /> SSL encryption</li>
+              <li className="flex items-center"><CheckCircle className="w-4 h-4 text-success mr-2" /> Payment tracking</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card className="hover:shadow-lg transition-shadow border-t-4 border-accent">
+          <CardHeader>
+            <Smartphone className="w-12 h-12 text-accent mb-4" />
+            <CardTitle>Mobile Optimization</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="space-y-2 text-sm">
+              <li className="flex items-center"><CheckCircle className="w-4 h-4 text-success mr-2" /> Responsive design</li>
+              <li className="flex items-center"><CheckCircle className="w-4 h-4 text-success mr-2" /> Fast loading</li>
+              <li className="flex items-center"><CheckCircle className="w-4 h-4 text-success mr-2" /> Mobile-friendly navigation</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card className="hover:shadow-lg transition-shadow border-t-4 border-success">
+          <CardHeader>
+            <BarChart3 className="w-12 h-12 text-success mb-4" />
+            <CardTitle>Analytics and Reports</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="space-y-2 text-sm">
+              <li className="flex items-center"><CheckCircle className="w-4 h-4 text-success mr-2" /> Sales & traffic reports</li>
+              <li className="flex items-center"><CheckCircle className="w-4 h-4 text-success mr-2" /> Customer behavior insights</li>
+              <li className="flex items-center"><CheckCircle className="w-4 h-4 text-success mr-2" /> Conversion tracking</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card className="hover:shadow-lg transition-shadow border-t-4 border-destructive">
+          <CardHeader>
+            <Users className="w-12 h-12 text-destructive mb-4" />
+            <CardTitle>Customer Management</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="space-y-2 text-sm">
+              <li className="flex items-center"><CheckCircle className="w-4 h-4 text-success mr-2" /> User registration and login</li>
+              <li className="flex items-center"><CheckCircle className="w-4 h-4 text-success mr-2" /> Order history</li>
+              <li className="flex items-center"><CheckCircle className="w-4 h-4 text-success mr-2" /> Profile management</li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card className="hover:shadow-lg transition-shadow border-t-4 border-secondary">
+          <CardHeader>
+            <Globe className="w-12 h-12 text-secondary mb-4" />
+            <CardTitle>SEO & Marketing</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ul className="space-y-2 text-sm">
+              <li className="flex items-center"><CheckCircle className="w-4 h-4 text-success mr-2" /> Search engine optimized</li>
+              <li className="flex items-center"><CheckCircle className="w-4 h-4 text-success mr-2" /> Social media integration</li>
+              <li className="flex items-center"><CheckCircle className="w-4 h-4 text-success mr-2" /> Newsletter & email tools</li>
+            </ul>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* Benefits */}
+<div className="text-center mb-12 mt-8">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">Benefits of Solutions</h2>
+        <p className="text-muted-foreground max-w-2xl mx-auto">
+Transform your online presence with measurable results        </p>
+      </div>
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+        
+        <div className="text-center">
+          <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">24/7</div>
+          <p className="text-muted-foreground">Availability</p>
+        </div>
+        <div className="text-center">
+          <div className="w-16 h-16 bg-success text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">∞</div>
+          <p className="text-muted-foreground">Scalability</p>
+        </div>
+        <div className="text-center">
+          <div className="w-16 h-16 bg-accent text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">↑</div>
+          <p className="text-muted-foreground">Revenue Boost</p>
+        </div>
+        <div className="text-center">
+          <div className="w-16 h-16 bg-secondary text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">⚡</div>
+          <p className="text-muted-foreground">Efficiency</p>
+        </div>
+      </div>
+
+      {/* Process Steps */}
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+        {[
+          { num: "1", title: "Consultation", desc: "Understanding your business needs and goals." },
+          { num: "2", title: "Design", desc: "Creating a visually appealing layout." },
+          { num: "3", title: "Development", desc: "Building functionality and features." },
+          { num: "4", title: "Testing", desc: "Ensuring everything works flawlessly." },
+          { num: "5", title: "Launch", desc: "Taking your website live." },
+          { num: "6", title: "Support", desc: "Ongoing updates and assistance." }
+        ].map(({ num, title, desc }, i) => (
+          <div key={num} className="flex items-start">
+            <div className={`w-8 h-8 rounded-full text-white flex items-center justify-center font-bold mr-4
+              ${i === 0 ? "bg-primary" : i === 1 ? "bg-success" : i === 2 ? "bg-accent" : i === 3 ? "bg-secondary" : i === 4 ? "bg-destructive" : "bg-[hsl(var(--chart-1))]"}
+            `}>
+              {num}
             </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                  1
-                </div>
-                <h3 className="text-lg font-bold mb-2">Discovery</h3>
-                <p className="text-gray-600">We analyze your requirements and understand your business goals</p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                  2
-                </div>
-                <h3 className="text-lg font-bold mb-2">Planning</h3>
-                <p className="text-gray-600">We create detailed project plans and technical specifications</p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                  3
-                </div>
-                <h3 className="text-lg font-bold mb-2">Development</h3>
-                <p className="text-gray-600">Our team builds your solution using agile development practices</p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-orange-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                  4
-                </div>
-                <h3 className="text-lg font-bold mb-2">Launch & Support</h3>
-                <p className="text-gray-600">We deploy your solution and provide ongoing support and maintenance</p>
-              </div>
+            <div>
+              <h4 className="font-semibold text-base">{title}</h4>
+              <p className="text-sm text-muted-foreground">{desc}</p>
             </div>
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
 
-      {/* Service Features */}
-      <section className="py-16">
+{/* service success */}
+<section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">What Makes Our Services Special</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">What Makes Our Services Special</h2>
             <p className="text-xl text-gray-600">Key features that set our solutions apart</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
@@ -328,23 +821,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-blue-900 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Get Started?</h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Let's discuss your project requirements and create a solution that drives your success
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black">
-              <Link href="/contact">Get Free Consultation</Link>
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-900">
-              <Link href="/portfolio">View Our Portfolio</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+
     </div>
   )
 }

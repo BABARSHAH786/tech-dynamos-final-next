@@ -2,93 +2,51 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
 import { Menu, X, Zap } from "lucide-react"
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="bg-white shadow-lg sticky top-0 z-50">
-      <div className="container mx-auto px-4">
+    <nav className="bg-background text-foreground shadow-lg sticky top-0 z-50 border-b border-border">
+      <div className="relative container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <Zap className="w-8 h-8 text-blue-600" />
-            <span className="text-2xl font-bold text-gray-800">Tech Dynamos</span>
+          <Link href="/" className="flex items-center space-x-2 z-20">
+            <Zap className="w-8 h-8 text-primary" />
+            <span className="text-2xl font-bold text-foreground">Tech Dynamos</span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-gray-700 hover:text-blue-600 transition-colors">
+          {/* Desktop Navigation - centered absolutely */}
+          <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 space-x-8">
+            <Link href="/" className="text-foreground hover:text-primary transition-colors">
               Home
             </Link>
-            
-            <Link href="/services" className="text-gray-700 hover:text-blue-600 transition-colors">
+            <Link href="/services" className="text-foreground hover:text-primary transition-colors">
               Services
             </Link>
-            <Link href="/solutions" className="text-gray-700 hover:text-blue-600 transition-colors">
-              Solutions
-            </Link>
-            <Link href="/login" className="text-gray-700 hover:text-blue-600 transition-colors">
-              Login
-            </Link>
-            <Link href="/about" className="text-gray-700 hover:text-blue-600 transition-colors">
-              About Us
-            </Link>
-            {/* close due to koi route  work nahe hai ispe */}
-            {/* <Link href="/education" className="text-gray-700 hover:text-blue-600 transition-colors">
-              Education Systems
-            </Link>
-            <Link href="/portfolio" className="text-gray-700 hover:text-blue-600 transition-colors">
-              Portfolio
-            </Link>
-            <Link href="/blog" className="text-gray-700 hover:text-blue-600 transition-colors">
-              Blog
-            </Link> */}
-            <Button asChild>
-              <Link href="/contact">Contact Us</Link>
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+          <button
+            className="md:hidden z-20 text-foreground"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle Menu"
+          >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 border-t">
+          <div className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col space-y-4">
-              <Link href="/" className="text-gray-700 hover:text-blue-600 transition-colors">
+              <Link href="/" className="text-foreground hover:text-primary transition-colors">
                 Home
               </Link>
-              <Link href="/about" className="text-gray-700 hover:text-blue-600 transition-colors">
-                About Us
-              </Link>
-              <Link href="/services" className="text-gray-700 hover:text-blue-600 transition-colors">
+              <Link href="/services" className="text-foreground hover:text-primary transition-colors">
                 Services
               </Link>
-              <Link href="/solutions" className="text-gray-700 hover:text-blue-600 transition-colors">
-                Solutions
-              </Link>
-              <Link href="/login" className="text-gray-700 hover:text-blue-600 transition-colors">
-                Login
-              </Link>
-              {/* close due to koi route  work nahe hai ispe */}
-              {/* <Link href="/education" className="text-gray-700 hover:text-blue-600 transition-colors">
-                Education Systems
-              </Link>
-              <Link href="/portfolio" className="text-gray-700 hover:text-blue-600 transition-colors">
-                Portfolio
-              </Link>
-              <Link href="/blog" className="text-gray-700 hover:text-blue-600 transition-colors">
-                Blog
-              </Link> */}
-              <Button asChild className="w-fit">
-                <Link href="/contact">Contact Us</Link>
-              </Button>
             </div>
           </div>
         )}
@@ -96,6 +54,63 @@ export function Navigation() {
     </nav>
   )
 }
+
+
+
+// origial
+// "use client"
+
+// import { useState } from "react"
+// import Link from "next/link"
+// import { Menu, X, Zap } from "lucide-react"
+
+// export function Navigation() {
+//   const [isOpen, setIsOpen] = useState(false)
+
+//   return (
+//     <nav className="bg-white shadow-lg sticky top-0 z-50">
+//       <div className="container mx-auto px-4">
+//         <div className="flex justify-between items-center py-4 mr-[230px] ">
+//           {/* Logo */}
+//           <Link href="/" className="flex items-center space-x-2">
+//             <Zap className="w-8 h-8 text-blue-600" />
+//             <span className="text-2xl font-bold text-gray-800">Tech Dynamos</span>
+//           </Link>
+
+//           {/* Desktop Navigation */}
+//           <div className="hidden md:flex items-center space-x-8">
+//             <Link href="/" className="text-gray-700 hover:text-blue-600 transition-colors">
+//               Home
+//             </Link>
+            
+//             <Link href="/services" className="text-gray-700 hover:text-blue-600 transition-colors">
+//               Services
+//             </Link>
+          
+//           </div>
+
+//           {/* Mobile Menu Button */}
+//           <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+//             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+//           </button>
+//         </div>
+//         {/* Mobile Navigation */}
+//         {isOpen && (
+//           <div className="md:hidden py-4 border-t">
+//             <div className="flex flex-col space-y-4">
+//               <Link href="/" className="text-gray-700 hover:text-blue-600 transition-colors">
+//                 Home
+//               </Link>
+//               <Link href="/services" className="text-gray-700 hover:text-blue-600 transition-colors">
+//                 Services
+//               </Link>
+//             </div>
+//           </div>
+//         )}
+//       </div>
+//     </nav>
+//   )
+// }
 
 // add dark mode support
 // "use client"

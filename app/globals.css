@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html{
+  scroll-behavior: smooth;
+}
 
 html, body {
   background-color: #fff;
@@ -103,4 +106,50 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+
+/* for color theme */
+/* LIGHT THEME (default) */
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222 47% 11%;
+
+  --primary: 221 83% 53%;              /* Blue 600 */
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 210 40% 96%;
+  --secondary-foreground: 222 47% 11%;
+
+  --muted: 210 40% 96%;
+  --muted-foreground: 215 20% 50%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 222 47% 11%;
+
+  --border: 214 32% 91%;
+  --input: 214 32% 91%;
+  --ring: 221 83% 53%;
+}
+
+/* DARK THEME */
+.dark {
+  --background: 222 47% 11%;
+  --foreground: 0 0% 100%;
+
+  --primary: 221 83% 66%;              /* lighter blue */
+  --primary-foreground: 222 47% 11%;
+
+  --secondary: 215 19% 27%;
+  --secondary-foreground: 0 0% 100%;
+
+  --muted: 215 20% 16%;
+  --muted-foreground: 215 20% 65%;
+
+  --card: 222 47% 14%;
+  --card-foreground: 0 0% 100%;
+
+  --border: 215 25% 24%;
+  --input: 215 25% 24%;
+  --ring: 221 83% 66%;
 }

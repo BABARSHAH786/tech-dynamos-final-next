@@ -345,7 +345,7 @@ We craft high-performing websites that grow your business — whether you're sel
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">E-commerce Packages</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Website Packages</h2>
             <p className="text-xl text-gray-600">Choose the perfect package for your business needs</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -473,7 +473,7 @@ We craft high-performing websites that grow your business — whether you're sel
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">E-commerce Success Stories</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Client website Success Stories</h2>
             <p className="text-xl text-gray-600">See how we've helped businesses grow online</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">

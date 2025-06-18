@@ -140,7 +140,7 @@ export default function AboutPage() {
                 <h3 className="text-xl font-bold mb-2">Syed Babar Ali</h3>
                 <p className="text-blue-600 font-medium mb-2">Team Leader</p>
                 <p className="text-gray-600 text-sm">
-                  10+ years in software development with a passion for educational technology. Sarah leads our vision
+                  3+ years in software development with a passion for educational technology. Babar leads our vision
                   and strategy.
                 </p>
               </CardContent>
@@ -152,7 +152,7 @@ export default function AboutPage() {
                 <h3 className="text-xl font-bold mb-2">Abdul hannan</h3>
                 <p className="text-green-600 font-medium mb-2">Co-Founder</p>
                 <p className="text-gray-600 text-sm">
-                  Expert in full-stack development and system architecture. Michael ensures our technical excellence and
+                  Expert in full-stack development and system architecture. Hannan ensures our technical excellence and
                   innovation.
                 </p>
               </CardContent>
@@ -164,7 +164,7 @@ export default function AboutPage() {
                 <h3 className="text-xl font-bold mb-2">Ali</h3>
                 <p className="text-purple-600 font-medium mb-2">Lead Designer</p>
                 <p className="text-gray-600 text-sm">
-                  Creative director with expertise in UX/UI design. Fatima ensures our solutions are both beautiful and
+                  Creative director with expertise in UX/UI design.Ali ensures our solutions are both beautiful and
                   functional.
                 </p>
               </CardContent>
@@ -176,7 +176,7 @@ export default function AboutPage() {
                 <h3 className="text-xl font-bold mb-2">Abu Huzaifa</h3>
                 <p className="text-orange-600 font-medium mb-2">Marketing </p>
                 <p className="text-gray-600 text-sm">
-                  Specialist in e-commerce platforms and payment integrations. Abu Huzaifa brings complex projects to life.
+                  Specialist in e-commerce platforms and payment integrations.Huzaifa brings complex projects to life.
                 </p>
               </CardContent>
             </Card>
@@ -296,7 +296,7 @@ export default function AboutPage() {
               <Link href="/contact">Start Your Project</Link>
             </Button>
             <Button size="lg" variant="outline" className="border-white text-black hover:bg-white hover:text-blue-900">
-              <Link href="/portfolio">View Our Work</Link>
+              <Link href="/solutions">View Our Work</Link>
             </Button>
           </div>
         </div>

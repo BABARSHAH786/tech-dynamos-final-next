@@ -181,14 +181,14 @@ export default function HomePage() {
             <Card className="hover:shadow-lg transition-shadow border border-border">
               <CardHeader>
                 <GraduationCap className="w-12 h-12 text-primary mb-4" />
-                <CardTitle className="text-card-foreground">School Management</CardTitle>
+                <CardTitle className="text-card-foreground">School Website</CardTitle>
                 <CardDescription className="text-muted-foreground">
                   Comprehensive systems for student enrollment, attendance, grades, and parent communication
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <Button variant="outline" className="w-full border-primary text-primary hover:bg-accent hover:text-primary-foreground">
-                  <Link href="/education">View Project</Link>
+                  <Link href="https://school-websitebabarali.vercel.app">View Project</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -196,19 +196,18 @@ export default function HomePage() {
             <Card className="hover:shadow-lg transition-shadow border border-border">
               <CardHeader>
                 <Users className="w-12 h-12 text-primary mb-4" />
-                <CardTitle className="text-card-foreground">College & University Systems</CardTitle>
+                <CardTitle className="text-card-foreground">Booking Systems</CardTitle>
                 <CardDescription className="text-muted-foreground">
-                  Advanced management platforms for higher education with research and hostel management
-                </CardDescription>
+                  Automated booking and scheduling platforms for service-based businesses.                </CardDescription>
               </CardHeader>
               <CardContent>
                 <Button variant="outline" className="w-full border-primary text-primary hover:bg-accent hover:text-primary-foreground">
-                  <Link href="/education">View Project</Link>
+                  <Link href="https://nextjs-hotel-booking-five.vercel.app/">View Project</Link>
                 </Button>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow border border-border">
+            {/* <Card className="hover:shadow-lg transition-shadow border border-border">
               <CardHeader>
                 <Globe className="w-12 h-12 text-primary mb-4" />
                 <CardTitle className="text-card-foreground">Madrasa Management</CardTitle>
@@ -221,9 +220,16 @@ export default function HomePage() {
                   <Link href="/education">Learn More</Link>
                 </Button>
               </CardContent>
-            </Card>
+            </Card> */}
+           
 
-            <Card className="hover:shadow-lg transition-shadow lg:col-span-2 border border-border">
+         
+
+          </div>
+      
+        </div>
+         <div className="flex items-center justify-center mt-4">
+            <Card className=" hover:shadow-lg transition-shadow lg:col-span-2 border border-border">
               <CardHeader>
                 <Zap className="w-12 h-12 text-primary mb-4" />
                 <CardTitle className="text-card-foreground">Custom Solutions</CardTitle>
@@ -233,20 +239,12 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <Button variant="outline" className="w-full border-primary text-primary hover:bg-accent hover:text-primary-foreground">
-                  <Link href="/contact">Discuss Your Needs</Link>
+                  <Link href="/services">View More Projects</Link>
                 </Button>
               </CardContent>
             </Card>
           </div>
-          <div className="flex justify-center items-center mt-8">
-            <Button
-              variant="outline"
-              className="w-20 h-10 sm:w-24 sm:h-12 md:w-28 md:h-14 text-xs sm:text-sm md:text-base border-primary text-primary hover:bg-accent hover:text-primary-foreground"
-            >
-              <Link href="/services">View More</Link>
-            </Button>
-          </div>
-        </div>
+      
       </section>
 
       {/* Website Packages Section */}
@@ -287,7 +285,7 @@ export default function HomePage() {
                   </li>
                 </ul>
                 <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
-                  <Link href="/contact">Get Started</Link>
+                  <Link href="/contact">Order on whatsapp</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -329,7 +327,7 @@ export default function HomePage() {
                   </li>
                 </ul>
                 <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
-                  <Link href="/contact">Get Started</Link>
+                  <Link href="/contact">Order on whatsapp</Link>
                 </Button>
               </CardContent>
             </Card>

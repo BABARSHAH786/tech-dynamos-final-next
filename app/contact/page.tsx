@@ -1,3 +1,4 @@
+import  EmailForm  from "@/components/EmailForm"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Mail, Phone, Users } from "lucide-react"
@@ -52,16 +53,14 @@ export default function ContactPage() {
               </CardContent>
             </Card>
           </div>
+          <main className="min-h-screen flex items-center justify-center bg-gray-900">
+      <EmailForm />
+    </main>
         </div>
       </section>
 
       {/* Call to Action */}
-      <section className="py-10 bg-blue-900 text-white text-center">
-        <h2 className="text-3xl font-bold mb-4">Let’s build your digital future </h2>
-        <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-black">
-          <a href="mailto:syedbabarali640@gmail.com">Contact on Email </a>
-        </Button>
-      </section>
+  
     </div>
   )
 }

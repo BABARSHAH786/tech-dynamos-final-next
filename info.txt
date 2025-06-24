@@ -1,0 +1,4 @@
+for sending email
+npm i send
+npm i @react-email/components 
+npm i zod

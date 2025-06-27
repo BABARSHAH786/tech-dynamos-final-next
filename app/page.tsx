@@ -285,7 +285,7 @@ export default function HomePage() {
                   </li>
                 </ul>
                 <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
-                  <Link href="/contact">Order on whatsapp</Link>
+                  <Link href="/contact">Contact on Email</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -327,7 +327,7 @@ export default function HomePage() {
                   </li>
                 </ul>
                 <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
-                  <Link href="/contact">Order on whatsapp</Link>
+                  <Link href="/contact">Contact on Email</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -367,7 +367,7 @@ export default function HomePage() {
                   </li>
                 </ul>
                 <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
-                  <Link href="/contact">Contact Sales</Link>
+                  <Link href="/contact">Contact on Email</Link>
                 </Button>
               </CardContent>
             </Card>

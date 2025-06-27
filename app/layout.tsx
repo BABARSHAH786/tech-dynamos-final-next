@@ -9,6 +9,10 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Tech Dynamos - Digital Transformation Solutions",
+    icons: {
+    icon: "/favicon.png",
+  },
+
   description:
     "Professional e-commerce websites and management systems for schools, colleges, universities, and madrasas. Transform your digital presence with Tech Dynamos.",
     generator: 'v0.dev'

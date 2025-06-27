@@ -291,7 +291,7 @@ export default function ServicesPage() {
           </ul>
           <Button className="w-full bg-primary text-white hover:bg-primary/90">
             <Link href="https://babar-portfolio-eight.vercel.app" className="flex items-center">
-              Learn More <ArrowRight className="ml-2 h-4 w-4" />
+              See Portfolio <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </Button>
         </CardContent>
@@ -327,7 +327,7 @@ export default function ServicesPage() {
           </ul>
           <Button className="w-full bg-primary text-white hover:bg-primary/90">
             <Link href="https://malikamansentinel.com" className="flex items-center">
-              Learn More <ArrowRight className="ml-2 h-4 w-4" />
+              View website <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </Button>
         </CardContent>
@@ -363,7 +363,7 @@ export default function ServicesPage() {
           </ul>
           <Button className="w-full bg-primary text-white hover:bg-primary/90">
             <Link href="https://nextjs-hotel-booking-five.vercel.app" className="flex items-center">
-              Learn More <ArrowRight className="ml-2 h-4 w-4" />
+              View website <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </Button>
         </CardContent>
